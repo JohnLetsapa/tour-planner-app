@@ -4,7 +4,7 @@
   "description": "Node Express &  MongoDB App",
   "main": "app.js",
   "scripts": {
-    "start:dev": "nodemon server.js",
+    "start": "nodemon server.js",
     "start:prod": "NODE_ENV=production nodemon server.js"
   },
   "author": "LL",
@@ -13,6 +13,7 @@
     "dotenv": "^16.0.1",
     "express": "^4.17.3",
     "fs": "^0.0.1-security",
+    "mongoose": "^5.13.14",
     "morgan": "^1.10.0"
   },
   "devDependencies": {
@@ -27,5 +28,8 @@
     "eslint-plugin-sx": "^0.14.0",
     "nodemon": "^2.0.15",
     "prettier": "^2.6.2"
+  },
+  "engines": {
+    "node": ">=10.0"
   }
 }

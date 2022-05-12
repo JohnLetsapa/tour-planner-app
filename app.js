@@ -12,10 +12,10 @@ if (process.env.NODE_ENV === 'development') {
 
 app.use(express.json()); // middleware - converts client requests into JSON for the server
 
-app.use((req, res, next) => {
-  console.log('Hello from middleware');
-  next();
-});
+// app.use((req, res, next) => {
+//   console.log('Hello from middleware');
+//   next();
+// });
 
 app.use((req, res, next) => {
   req.requestTime = new Date().toISOString();

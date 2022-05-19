@@ -9,6 +9,9 @@ router
   .route('/top-5-cheapest')
   .get(tourControllers.aliasTopTours, tourControllers.getAllTours); // aliasT... func manipulates the incoming query before it is passed to getAllTours
 
+router.route('/tour-stats').get(tourControllers.getTourStats);
+router.route('/monthly-plan/:year').get(tourControllers.getMonthlyPlan);
+
 router
   .route('/')
   .get(tourControllers.getAllTours)

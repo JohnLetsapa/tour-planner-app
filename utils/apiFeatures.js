@@ -50,7 +50,6 @@ class APIFeatures {
     const skip = (page - 1) * limit; // when user request say page 2, this will skip results in page 1, and only return those on page 2...works for all other cases
 
     this.query = this.query.skip(skip).limit(limit); // skips(x) skips x results before quering data
-
     return this;
   }
 }
